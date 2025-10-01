@@ -1,2 +1,6 @@
-n = int(input("Nhap n: "))
-print(2 * n)
+n = int(input("Nhap so nguyen n: "))
+rev = 0
+while n > 0:
+  rev = rev * 10 + n % 10
+  n /= 10
+print(rev)
